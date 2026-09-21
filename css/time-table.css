@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table{
+    width: 80%; /*Chiem 80% chieu rong trang*/
+    margin: 40px auto;/*Can giua*/
+    border-collapse: collapse;/*Gop cac duong vien*/
+}
+/*Dinh dang lai o th va td*/
+th, td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+/*Lam noi bat trang tieu de*/
+thead th{
+    background-color: #007bff;
+    color: white;
+}
+/*Tao hieu ung ngua van cho cac hang chan*/
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+/*Them hieu ung hover cho cac hang trong tbody*/
+tbody tr:hover{
+    background-color: #e2e2e2;
+}
