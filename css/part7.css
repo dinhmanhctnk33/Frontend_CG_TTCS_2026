@@ -1,0 +1,13 @@
+/* Mo ta quan he Hau due: Cu phap A B */
+.post p{
+    color: blue;
+}
+/* Mo ta quan he Con truc tiep: Cu phap A > B */
+.post_1 > p{
+    color: red;
+}
+/* Mo ta quan he Anh em lien ke: Cu phap A + B */
+h2+p{
+    font-style: italic;
+    color: #555;
+}
