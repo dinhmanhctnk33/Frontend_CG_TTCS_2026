@@ -1,0 +1,52 @@
+.button{
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: white;
+}
+/* Đây là lớp giả bạn sẽ gặp và sử dụng nhiều nhất. Trạng thái :hover được kích hoạt khi người dùng di con trỏ chuột lên trên một phần tử.
+
+Mục đích: Cung cấp phản hồi trực quan cho người dùng, cho họ biết rằng phần tử này có thể tương tác được.
+
+Khi nào dùng: Thường được dùng cho các liên kết (<a>), nút bấm (<button>), các mục trong menu, hoặc bất kỳ phần tử nào bạn muốn tạo hiệu ứng khi người dùng di chuột đến. */
+.button:hover{
+    background-color: #2980b9;
+}
+input[type="text"]{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+/* Trạng thái :focus được kích hoạt khi một phần tử được "chọn" hoặc "tập trung" vào. Điều này xảy ra khi người dùng nhấp chuột vào một ô nhập liệu, hoặc sử dụng phím Tab trên bàn phím để di chuyển qua các phần tử có thể tương tác (như link, button, input).
+
+Mục đích: Cực kỳ quan trọng cho khả năng tiếp cận (accessibility). Nó cung cấp một chỉ báo rõ ràng cho những người dùng không sử dụng chuột, giúp họ biết chính xác họ đang ở đâu trên trang.
+
+Khi nào dùng: Chủ yếu cho các phần tử tương tác như <a>, <button>, <input>, <textarea>. */
+input[type="text"]:focus{
+    border-color: #3498db;
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+}
+
+ul li{
+    padding: 10px;
+}
+/* Khác với hai lớp giả trên, :nth-child() không dựa vào hành động của người dùng mà dựa vào vị trí của một phần tử trong một nhóm các phần tử anh em (cùng cấp, cùng cha).
+
+Mục đích: Cho phép bạn chọn các phần tử theo thứ tự của chúng, ví dụ như phần tử thứ ba, hoặc tất cả các phần tử ở vị trí chẵn.
+
+Cách dùng:
+
+:nth-child(n): Chọn phần tử ở vị trí thứ n. Ví dụ: :nth-child(3) chọn phần tử thứ ba.
+
+:nth-child(odd): Chọn tất cả các phần tử ở vị trí lẻ (1, 3, 5...).
+
+:nth-child(even): Chọn tất cả các phần tử ở vị trí chẵn (2, 4, 6...). */
+ul li:nth-child(even){
+    background-color: #f2f2f2;
+}
