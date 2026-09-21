@@ -1,0 +1,20 @@
+.box-content{
+    width: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    background-color: lightcoral;
+}
+
+.box-border{
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    background-color: lightgreen;
+}
+html{
+    box-sizing: border-box;
+}
+*,*before, *after{
+    box-sizing: inherit;
+}
